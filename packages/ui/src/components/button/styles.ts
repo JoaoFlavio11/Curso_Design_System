@@ -1,23 +1,23 @@
 import {css, styled} from "styled-components"
 import {colors, fontSize} from "../../tokens"
 
-import {buttonProps} from "./Index"
+import {type buttonProps} from "./index"
 
 const modifiers = {
     variant: {
         primary: () => css`
-        background-color: ${colors.gray500};
+        background-color: ${colors.unisal500};
         color: ${colors.white};
         `,
         secondary: () => css`
-        background-color: ${colors.gray400};
+        background-color: ${colors.unisal900};
         color: ${colors.white};
         `,
     }
 }
 
-export const Button = styled.button<buttonProps>`
-    background-color: ${colors.unisal300};
+export const StyledButton = styled.button<buttonProps>`
+    background-color: ${colors.unisal500};
     display: flex;
     align-itens: center;
     justify-content: center;
@@ -30,4 +30,4 @@ export const Button = styled.button<buttonProps>`
     ${({ variant }) => css`
         ${variant && modifiers.variant[variant]()}
     `}
-`;modifiers
+`;

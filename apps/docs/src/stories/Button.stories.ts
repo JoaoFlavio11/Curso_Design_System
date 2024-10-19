@@ -1,5 +1,5 @@
 import {Meta, StoryObj} from "@storybook/react"
-import { Button } from "@repo/ui/components";
+import { Button, buttonProps } from "@repo/ui/components";
 
 
 const meta = {
@@ -12,7 +12,7 @@ const meta = {
   args: {
     children: "button"
   }
-}satisfies Meta
+}satisfies Meta<buttonProps>;
 
 export default meta;
 

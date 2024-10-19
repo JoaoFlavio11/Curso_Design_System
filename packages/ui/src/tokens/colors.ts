@@ -9,5 +9,6 @@ export const colors = {
     "gray400": "#585859",
     "gray500": "#323238",
 
-    "unisal300":"#944662"   
+    unisal500: "#4086F3",
+    unisal900: "#0040B2",   
 };

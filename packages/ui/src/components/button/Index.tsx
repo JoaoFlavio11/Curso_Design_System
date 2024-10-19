@@ -5,5 +5,5 @@ export interface buttonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 };
 
 export const Button = ({children, variant = "primary", ...props}:buttonProps) =>{
-    return <S.Button variant= {variant} {...props}> {children} </S.Button>;
+    return <S.StyledButton variant= {variant} {...props}> {children} </S.StyledButton>;
 };
